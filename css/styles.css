@@ -427,7 +427,7 @@ a {
 .footer .container {
   display: flex;
   justify-content: left;
-  align-items: center;
+  align-items: baseline;
 }
 
 .text-footer {
