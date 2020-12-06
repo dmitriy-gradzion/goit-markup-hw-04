@@ -37,6 +37,7 @@ a {
 .title {
   font-weight: 700;
   font-size: 36px;
+  margin-bottom: 50px;
   line-height: 1.666;
   text-align: center;
   letter-spacing: 0.03em;
@@ -308,6 +309,9 @@ a {
 .team-list-item {
   background-color: #fff;
   border: 1px solid #ccc;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
 }
 
@@ -330,11 +334,7 @@ a {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color: var(--icon-color);
-}
-
-.team-social-link:focus .social-list-icon,
-.team-social-link:hover .social-list-icon {
+  fill: var(--icon-color);
 }
 
 .social-list-icon {
@@ -342,11 +342,51 @@ a {
   height: 20px;
 }
 
+.team-social-link:focus .social-list-icon,
+.team-social-link:hover .social-list-icon {
+  fill: #fff;
+}
+
 .team-social-link:focus,
 .team-social-link:hover {
   background-color: var(--accent-color);
 }
 /*===============End Team===============*/
+
+/*===============Clients===============*/
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.clients-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--icon-color);
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-list-link:focus .clients-list-icon,
+.clients-list-link:hover .clients-list-icon {
+  fill: var(--accent-color);
+}
+
+.clients-list-link:focus,
+.clients-list-link:hover {
+  border: 1px solid var(--accent-color);
+}
+/*===============End Clients===============*/
 
 /*===============Footer===============*/
 .footer {
