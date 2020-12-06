@@ -2,6 +2,7 @@
   --main-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
   --accent-color: #2196f3;
+  --icon-color: #afb1b8;
 }
 
 body {
@@ -28,6 +29,9 @@ ol {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
 /*===============Components===============*/
 
 .title {
@@ -142,6 +146,14 @@ ol {
 /*===============HERO===============*/
 .hero {
   background-color: #2f303a;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-grow: 1;
   padding-top: 200px;
   padding-bottom: 200px;
   min-height: 600px;
@@ -221,6 +233,23 @@ ol {
   width: 270px;
   min-height: 101px;
 }
+
+.features-list-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.features-logo {
+  width: 70px;
+  height: 70px;
+  align-items: center;
+}
 /*===============End Our Features===============*/
 
 /*===============About===============*/
@@ -240,6 +269,7 @@ ol {
 
 /*===============Team===============*/
 .team {
+  background-color: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -276,10 +306,46 @@ ol {
 }
 
 .team-list-item {
+  background-color: #fff;
   border: 1px solid #ccc;
   padding-bottom: 30px;
 }
 
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.team-social-item {
+  list-style: none;
+}
+
+.team-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--icon-color);
+}
+
+.team-social-link:focus .social-list-icon,
+.team-social-link:hover .social-list-icon {
+}
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.team-social-link:focus,
+.team-social-link:hover {
+  background-color: var(--accent-color);
+}
 /*===============End Team===============*/
 
 /*===============Footer===============*/
